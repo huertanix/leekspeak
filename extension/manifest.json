@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "LeekSpeak",
+  "description": "View Tor .onion service URLs as readable English phrases.",
+  "homepage_url": "https://github.com/corcra/leekspeak",
+  "version": "1.0",
+
+  "icons": {
+    "48": "icons/leek_anime_48px.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*"],
+      "js": ["mock-leekspeak.js"]
+    }
+  ]
+
+}
