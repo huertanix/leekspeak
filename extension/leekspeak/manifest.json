@@ -4,16 +4,25 @@
   "description": "View Tor .onion service URLs as readable English phrases.",
   "homepage_url": "https://github.com/corcra/leekspeak",
   "version": "1.0",
-
   "icons": {
-    "48": "icons/leek_anime_48px.png"
+    "48": "icons/farfetchd_48px.png"
+  },
+
+  "applications": {
+    "gecko": {
+      "id": "leekspeak@mozilla.org",
+      "strict_min_version": "48.0"
+    }
   },
 
   "content_scripts": [
     {
-      "matches": ["*"],
-      "js": ["mock-leekspeak.js"]
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "mock-leekspeak.js"
+      ]
     }
   ]
-
 }
