@@ -15,6 +15,12 @@
     }
   },
 
+  "browser_action": {
+    "default_icon": "icons/farfetchd_48px.png",
+    "default_title": "LeekSpeak",
+    "default_popup": "popup/leekspeak.html"
+  },
+
   "content_scripts": [
     {
       "matches": [
